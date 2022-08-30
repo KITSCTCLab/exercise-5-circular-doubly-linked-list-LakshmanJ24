@@ -44,7 +44,7 @@ class DoublyCircularLinkedList:
 
     def get(self, index) -> int:
         # Write code here
-        print data(index)
+        print(data(index))
 
     def delete_at_index(self, index) -> bool:
         # Write code here
@@ -60,7 +60,7 @@ class DoublyCircularLinkedList:
     def get_previous_next(self, index) -> list:
         # Write code here
         previous.next=data(index)
-        print previous.next
+        print(previous.next)
 
 
 # Do not change the following code
