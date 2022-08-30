@@ -12,7 +12,7 @@ class DoublyCircularLinkedList:
 
     def add_at_tail(self, data) -> bool:
         # Write code here
-        temp = node(data)
+        temp = Node(data)
         end.previous=temp
         temp.previous=next.temp
         end==temp
@@ -23,7 +23,7 @@ class DoublyCircularLinkedList:
 
     def add_at_head(self, data) -> bool:
         # Write code here
-        temp = node(data)
+        temp = Node(data)
         head.next=temp
         temp.next=previous.temp
         head=temp
@@ -34,7 +34,7 @@ class DoublyCircularLinkedList:
 
     def add_at_index(self, index, data) -> bool:
         # Write code here
-        temp = node(data)
+        temp = Node(data)
         temp.next=index
         temp.previous=index.previous
         temp.previous.next=temp
@@ -50,7 +50,7 @@ class DoublyCircularLinkedList:
 
     def delete_at_index(self, index) -> bool:
         # Write code here
-        temp = node(data)
+        temp = Node(data)
         temp.previous=index
         temp.next=index.next
         temp.next.previous=temp
