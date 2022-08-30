@@ -36,7 +36,7 @@ class DoublyCircularLinkedList:
         # Write code here
         temp = Node(data)
         temp.next=index
-        temp.previous=index.previous
+        temp.previous=previous(index)
         temp.previous.next=temp
         index.previous=temp
         if(index.previous==temp):
@@ -52,7 +52,7 @@ class DoublyCircularLinkedList:
         # Write code here
         temp = Node(data)
         temp.previous=index
-        temp.next=index.next
+        temp.next=next(index)
         temp.next.previous=temp
         index.next=text
         if(index.next==temp):
