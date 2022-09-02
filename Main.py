@@ -26,6 +26,7 @@ class DoublyCircularLinkedList:
 
     def add_at_head(self, data) -> bool:
         # Write code here
+        new_node = Node(data)
         if self.count > 0:
             new_node.next = self.head
             new_node.previous = self.end
